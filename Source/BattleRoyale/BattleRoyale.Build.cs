@@ -2,7 +2,7 @@
 
 using UnrealBuildTool;
 
-public class BattleRoyale : ModuleRules
+public class BattleRoyale : HaxeModuleRules
 {
 	public BattleRoyale(ReadOnlyTargetRules Target) : base(Target)
 	{
