@@ -1,0 +1,16 @@
+# Normal Unreal ignores
+Intermediate
+Binaries
+Saved
+DerivedDataCache
+Build
+/*.xcodeproj
+/Makefile
+.vscode
+
+# Unreal.hx-specific files
+/Source/PlatformerGame/*.Build.cs
+Generated
+gen-*.hxml
+/uhxconfig.local
+export_classes.info
