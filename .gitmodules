@@ -1,0 +1,3 @@
+[submodule "Plugins/UnrealHx"]
+	path = Plugins/UnrealHx
+	url = git@github.com:proletariatgames/unreal.hx.git
