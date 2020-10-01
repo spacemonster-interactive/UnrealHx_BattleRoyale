@@ -9,21 +9,24 @@ I'm using macOS Catalina, so if you're on a different version of Mac or Window s
 ## Versions
 
 * Unreal 4.22.3
-* [Haxe 4.0.0](https://haxe.org/download/version/4.0.0/)
 * vscode
+* [Haxe 4.0.0](https://haxe.org/download/version/4.0.0/)
+  * hxcpp 4.0.64
+  * hxcs 3.4.0
 
 ## Setup
 
-* Download Unreal
-* Download this repo
-* Pull the unreal.hx submodule
+* Download and install haxe 4.0.0
+	* Install hxcpp `haxelib install hxcpp 4.0.64`
+	* Install hxcs `haxelib install hxcs 3.4.0`
+* Download and install Unreal 4.22.3
+* Download this repo along with the unreal.hx submodule
 * From the root of the repo run `haxe Haxe/gen-build-script.hxml`
-* Compile via Unreal Editor
-
-## Project Settings
-* Click the arrow next to the play button and select:
-  * Run Dedicated Server
-  * Number of players: 2
+* Open the BattleRoyale.uproject 
+	* Click the arrow next to the play button and select:
+		* Run Dedicated Server
+  		* Number of players: 2
+* Press the button compile via Unreal Editor
 
 ## macOS Catalina Issues
 
