@@ -8,6 +8,26 @@
 		}
 	],
 	"settings": {
-		"typescript.tsc.autoDetect": "off"
+		"files.exclude": {
+			"**/*.meta": true,
+			"bin/**/*.js": true,
+			"**/bin": true,
+			"**/project/bin": true
+		},
+		"haxe.configurations": [ // one or more configurations for the haxe completion server
+			["/haxe/gen-compl-script.hxml"], // hxml file is a normal Haxe argument too
+		],
+		"haxe.displayServer": { // configuration for starting haxe completion server itself
+			"arguments": ["-v"], // arguments before --wait (-v is useful for debugging)
+		},
+		"haxe.executable": {
+			"path": "/usr/local/bin/haxe", // path to the executable (default: `haxe`)
+			"env": { // environment variables for Haxe
+				"HAXELIB_PATH": "/Users/peteshand/SDKs/haxe/libs",
+			},
+			"windows": {},
+			"linux": {},
+			"osx": {}
+		},
 	}
 }
