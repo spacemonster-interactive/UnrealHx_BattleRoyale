@@ -6,18 +6,24 @@ This project is based on the default first person shoot template along with some
 
 I'm using macOS Catalina, so if you're on a different version of Mac or Window some steps may vary.
 
+## Versions
+
+* Unreal 4.22.3
+* [Haxe 4.0.0](https://haxe.org/download/version/4.0.0/)
+* vscode
+
 ## Setup
 
-* Download Unreal 4.22.3
+* Download Unreal
 * Download this repo
 * Pull the unreal.hx submodule
-* from the root of the repo run `haxe Haxe/gen-build-script.hxml`
+* From the root of the repo run `haxe Haxe/gen-build-script.hxml`
 * Compile via Unreal Editor
 
 ## Project Settings
 * Click the arrow next to the play button and select:
   * Run Dedicated Server
-  * 
+  * Number of players: 2
 
 ## macOS Catalina Issues
 
