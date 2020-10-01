@@ -2,7 +2,7 @@
 
 The goal of this repo is to provide a basic example project of unreal.hx with the latest supported versions of Unreal and Haxe. As well as documenting issues I came across during the process of creating the project.
 
-This project is based on the default first person shoot template along with some updates from the following c++ tutorial: `https://www.youtube.com/watch?v=-0iVLPVyvFQ`
+This project is based on the default first person shoot template along with some updates from the following c++ tutorial which cover unreal's replication system: `https://www.youtube.com/watch?v=-0iVLPVyvFQ`.
 
 I'm using macOS Catalina, so if you're on a different version of Mac or Window some steps may vary.
 
