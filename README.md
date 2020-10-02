@@ -11,7 +11,7 @@ I'm using macOS Catalina, so if you're on a different OS or version of Mac some 
 * Unreal 4.22.3
 * vscode
 * [Haxe 4.0.0](https://haxe.org/download/version/4.0.0/)
-  * hxcpp 4.0.64
+  * hxcpp 4.1.15
   * hxcs 3.4.0
 
 ## Setup
@@ -21,11 +21,13 @@ I'm using macOS Catalina, so if you're on a different OS or version of Mac some 
 	* Install hxcs `haxelib install hxcs 3.4.0`
 * Download and install Unreal 4.22.3
 * Download this repo along with the unreal.hx submodule
-* From the root of the repo run `haxe Haxe/gen-build-script.hxml`
-* Open the BattleRoyale.uproject 
-	* Click the arrow next to the play button and select:
-		* Run Dedicated Server
-  		* Number of players: 2
+* Open BattleRoyale.uproject
+	* If you see the error: Missing BattleRoyale Modules .. etc ... Would you like to rebuild them now? Press `Yes`
+		* If this step fails refer to the issues listed below 
+		* or create an issue on the unreal.hx or this repo
+* Once the project opens click the arrow next to the play button and select:
+	* Run Dedicated Server
+	* Number of players: 3
 * Press the button compile via Unreal Editor
 * Press the play button to test the project
 
@@ -37,3 +39,14 @@ I'm using macOS Catalina, so if you're on a different OS or version of Mac some 
 ## Crashing Issue
 
 * If your project crashes and then continues to crash every time you launch the project, delete the `./Binaries/Haxe/` directory and recompile via the unreal editor.
+
+
+## Build Issues
+
+* If after first openning the project and pressing the compile button nothing happens and you set a warning in the Output Log window `Warning: RebindPackages not possible (no packages specified)`.
+	* Close the project
+	* Delete the following folders
+		* Binaries
+		* Intermediate
+		* Saved
+	* And then open BattleRoyale.uproject to restart the build process.
